@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="wallet" viewBox="0 0 48 48"><rect x="5" y="12" width="38" height="29" rx="6"/><path d="M9 12V9c0-2 2-4 4-4h24v7M31 24h12v10H31a5 5 0 0 1 0-10Z"/><circle cx="34.5" cy="29" r="1.5" fill="currentColor"/></symbol>
+<symbol id="fgts" viewBox="0 0 48 48"><path d="M8 39h32M12 35V21h7v14m5 0V14h7v21m5 0V7h7v28M8 18l10-8 8 4L41 4"/><path d="m35 4h6v6"/></symbol>
+<symbol id="person" viewBox="0 0 48 48"><circle cx="24" cy="14" r="8"/><path d="M8 42c1-10 7-16 16-16s15 6 16 16"/></symbol>
+<symbol id="card" viewBox="0 0 48 48"><rect x="4" y="9" width="40" height="30" rx="6"/><path d="M4 18h40M11 31h10"/></symbol>
+<symbol id="store" viewBox="0 0 48 48"><path d="M7 19v24h34V19M5 19l4-12h30l4 12c-1 5-8 6-10 1-2 5-8 5-10 0-3 5-9 4-10-1-2 5-7 5-8 0Z"/><path d="M17 43V29h14v14"/></symbol>
+<symbol id="globe" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20"/><path d="M4 24h40M24 4c12 11 12 29 0 40M24 4c-12 11-12 29 0 40"/></symbol>
+<symbol id="shield" viewBox="0 0 48 48"><path d="M24 4 42 11v12c0 11-7 18-18 22C13 41 6 34 6 23V11l18-7Z"/><path d="m16 24 6 6 11-13"/></symbol>
+<symbol id="doc" viewBox="0 0 48 48"><path d="M10 4h20l8 8v32H10V4Z"/><path d="M30 4v9h8M17 22h14M17 29h14M17 36h9"/></symbol>
+<symbol id="phone" viewBox="0 0 48 48"><rect x="12" y="3" width="24" height="42" rx="6"/><path d="M19 9h10M21 39h6"/></symbol>
+<symbol id="check" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20"/><path d="m14 24 7 7 14-15"/></symbol>
+<symbol id="home" viewBox="0 0 48 48"><path d="m5 23 19-17 19 17M10 20v23h28V20M19 43V29h10v14"/></symbol>
+<symbol id="car" viewBox="0 0 48 48"><path d="M6 31h36M10 31l4-12h20l8 12M17 19l4-7h9l4 7"/><circle cx="14" cy="34" r="5"/><circle cx="36" cy="34" r="5"/></symbol>
+<symbol id="umbrella" viewBox="0 0 48 48"><path d="M5 23a19 19 0 0 1 38 0c-5-4-9-4-14 0-4-4-8-4-12 0-4-4-8-4-12 0ZM24 4v34c0 5 7 6 8 1"/></symbol>
+</defs></svg>

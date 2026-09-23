@@ -1,0 +1,17 @@
+{
+  "projectName": "vivianeemprestimos",
+  "siteUrl": "https://vivianeemprestimos.com.br",
+  "neon": {
+    "resourceName": "vivianeemprestimos-db",
+    "plan": "free",
+    "region": "us-east-1"
+  },
+  "vercel": {
+    "environments": [
+      "production",
+      "preview",
+      "development"
+    ],
+    "functionRegion": "iad1"
+  }
+}

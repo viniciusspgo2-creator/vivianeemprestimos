@@ -1,0 +1,79 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url       = env("DATABASE_URL")
+}
+
+// Admin authentication — password is created on first access
+model AdminUser {
+  id           String   @id @default(cuid())
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Key/value store for site settings, texts, banners and SEO configuration
+model SiteSetting {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+}
+
+// Blog posts managed by the admin panel
+model BlogPost {
+  id              String    @id @default(cuid())
+  slug            String    @unique
+  title           String
+  excerpt         String?
+  content         String
+  coverImage      String?
+  metaTitle       String?
+  metaDescription String?
+  author          String?
+  tags            String?
+  published       Boolean   @default(false)
+  publishedAt     DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([published, publishedAt])
+}
+
+// Robust visit tracking
+model PageVisit {
+  id        Int      @id @default(autoincrement())
+  path      String
+  visitorId String // anonymous hash (ip + ua) — enables unique visitor counts
+  referrer  String?
+  device    String? // mobile | desktop | tablet
+  browser   String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([path])
+  @@index([visitorId])
+  @@index([path, visitorId, createdAt])
+}
+
+// Solicitações de atendimento enviadas pelo formulário de contato
+model ContactLead {
+  id        Int      @id @default(autoincrement())
+  name      String
+  phone     String
+  service   String?
+  message   String?
+  createdAt DateTime @default(now())
+}
+
+// Uploaded images stored in the database (Vercel has no persistent filesystem)
+model Image {
+  id        String   @id @default(cuid())
+  filename  String // SEO-friendly name, e.g. banner-home.webp
+  mime      String
+  size      Int
+  data      Bytes
+  createdAt DateTime @default(now())
+}

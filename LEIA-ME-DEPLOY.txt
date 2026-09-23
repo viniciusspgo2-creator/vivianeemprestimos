@@ -1,0 +1,11 @@
+DEPLOY AUTOMATICO
+=================
+
+1. Mantenha este projeto dentro do repositorio GitHub.
+2. Dê dois cliques em DEPLOYAR.bat.
+3. No primeiro uso, autorize a Vercel/GitHub no navegador se for solicitado.
+
+O script cria/vincula o projeto Vercel, cria o Neon quando necessario,
+configura as variaveis, conecta o GitHub e faz o deploy de producao.
+
+Para outro site, altere somente deploy.config.json.
